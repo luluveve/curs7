@@ -1,3 +1,7 @@
+package animals;
+
+import heroes.Animal;
+
 public class Bear extends Animal {
     @Override
     public void makeNoise() {

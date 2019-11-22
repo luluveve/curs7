@@ -1,3 +1,5 @@
+package animals;
+
 public class VetProgram {
     public static void main(String[] args) {
         Bear winnie = new Bear();

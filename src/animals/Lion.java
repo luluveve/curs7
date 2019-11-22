@@ -1,3 +1,7 @@
+package animals;
+
+import heroes.Animal;
+
 public class Lion extends Animal {
 
     @Override
