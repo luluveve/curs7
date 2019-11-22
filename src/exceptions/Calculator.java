@@ -11,12 +11,19 @@ public class Calculator {
         int b = reader.nextInt();
         try {
             divide(a, b);
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("Operatie invalida.");
+        } catch (InvalidParameterException e) {
+
         }
     }
 
-    private static void divide(int a, int b) {
+
+    private static void divide(int a, int b) throws InvalidParameterException {
+        if (b == 0) {
+            throw new InvalidParameterException();
+        }
+
         int c = a / b;
         System.out.println(a + "/" + b + "=" + c);
     }
