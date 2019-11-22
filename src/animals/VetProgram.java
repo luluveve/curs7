@@ -10,5 +10,6 @@ public class VetProgram {
         marcel.makeShot(simba);
         marcel.makeShot(kfc);
         marcel.makeShot(winnie);
+
     }
 }
